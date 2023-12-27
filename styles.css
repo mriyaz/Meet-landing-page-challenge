@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  text-rendering: optimizeSpeed;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 65%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  p {
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  p {
+    max-width: 35%;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+  }
+}
+
+h2 {
+  font-weight: 800;
+  margin: 0 auto;
+  max-width: 65%;
+  margin-bottom: 5%;
+}
+@media (min-width: 1024px) {
+  h2 {
+    max-width: 30%;
+    font-size: 2rem;
+    margin-bottom: 0;
+    line-height: 2rem;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30%;
+  padding: 40%;
+}
+nav .meet {
+  transition: ease-out 1s;
+}
+nav .icon {
+  transition: ease-out 1s;
+}
+nav .icon:hover {
+  transform: rotate(360deg);
+}
+.number-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  content: "";
+  width: 0.0625rem;
+  height: 5.25rem;
+  background-color: hsla(240, 10%, 57%, 0.25);
+}
+
+.number {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: hsl(240, 10%, 57%);
+  font-size: small;
+  font-weight: 600;
+  background-color: hsl(0, 0%, 98%);
+  border: 0.0938rem solid hsla(240, 10%, 57%, 0.25);
+  border-radius: 6.25rem;
+  margin: 0 auto;
+  width: 3rem;
+  height: 3rem;
+}
+
+.hero {
+  margin-bottom: 10%;
+}
+@media (min-width: 1024px) {
+  .hero {
+    margin: 0 5%;
+    padding: 0 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .hero-images2 {
+    width: 30%;
+    display: flex;
+  }
+  .hero .hero-images2:hover {
+    content: url("assets/desktop/image-hero-right-hover.png");
+  }
+}
+
+.hero-images1 {
+  padding: 0 10% 10% 10%;
+}
+.hero-images1 picture img {
+  width: 100%;
+}
+.hero-images1 picture img:hover {
+  content: url("assets/image-hero-hover.png");
+}
+@media (min-width: 1024px) {
+  .hero-images1 {
+    padding: 0;
+    width: 30%;
+    display: flex;
+  }
+  .hero-images1 picture {
+    width: 100%;
+    display: flex;
+  }
+  .hero-images1 picture img {
+    width: 100%;
+  }
+  .hero-images1 picture img:hover {
+    content: url("assets/desktop/image-hero-left-hover.png");
+  }
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin: 0 auto;
+  max-width: 65%;
+}
+@media (min-width: 1024px) {
+  .hero-text {
+    margin: 0 5% 5% 5%;
+    width: 30%;
+  }
+  .hero-text h1 {
+    font-size: 3.25rem;
+    max-width: 90%;
+    line-height: 3.25rem;
+  }
+  .hero-text p {
+    max-width: 100%;
+    margin-top: 5%;
+    padding-top: 2.5%;
+  }
+}
+
+.btn-group {
+  text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .btn-group {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+@media (min-width: 1024px) {
+  .btn-group {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.downloadbtn1 {
+  margin: 5% 5% 0 5%;
+  background-color: hsl(192, 37%, 48%);
+  color: white;
+  font-weight: 600;
+  width: 80%;
+  padding: 0.8rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+.downloadbtn1:hover {
+  opacity: 0.5;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .downloadbtn1 {
+    margin-top: 0;
+    margin: 5% 5% 0 5%;
+    background-color: hsl(192, 37%, 48%);
+    color: white;
+    font-weight: 600;
+    width: 40%;
+    padding: 0.8rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+  }
+  .downloadbtn1:hover {
+    opacity: 0.5;
+  }
+}
+
+.whatbtn {
+  margin: 5% 5% 0 5%;
+  background-color: hsl(268, 34%, 53%);
+  color: white;
+  font-weight: 600;
+  width: 60%;
+  padding: 0.8rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+.whatbtn:hover {
+  opacity: 0.5;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .whatbtn {
+    margin: 5% 5% 0 5%;
+    background-color: hsl(268, 34%, 53%);
+    color: white;
+    font-weight: 600;
+    width: 30%;
+    padding: 0.8rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+  }
+  .whatbtn:hover {
+    opacity: 0.5;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(92.19deg, #855FB1 -15.84%, #4D96A9 114.64%);
+  -webkit-background-clip: text;
+  color: transparent;
+  /* Fallback for non-WebKit browsers */
+  -webkit-text-fill-color: transparent;
+  /* For WebKit browsers */
+}
+
+.hero-images2 {
+  display: none;
+}
+
+.divider1 {
+  margin-bottom: 10%;
+}
+@media (min-width: 1024px) {
+  .divider1 {
+    margin-bottom: 5%;
+  }
+}
+
+.section-one {
+  text-align: center;
+}
+.section-one .section-one-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.section-one .section-one-photos img {
+  width: 40%;
+  border-radius: 5px;
+  margin-bottom: 5%;
+}
+.section-one h3 {
+  color: hsl(192, 37%, 48%);
+  font-size: 0.8rem;
+  margin-bottom: 5%;
+}
+@media (min-width: 1024px) {
+  .section-one {
+    max-width: 80%;
+  }
+  .section-one .section-one-photos img {
+    width: 20%;
+  }
+  .section-one h3 {
+    margin-bottom: 2.5%;
+  }
+}
+
+.divider2 {
+  margin-bottom: 10%;
+  z-index: 10;
+}
+
+.section-two {
+  background-color: hsl(192, 37%, 48%);
+  position: relative;
+  text-align: center;
+  color: hsl(0, 0%, 98%);
+  z-index: 1;
+  margin-top: -3.8rem;
+  padding: 15% 0;
+}
+.section-two .downloadbtn2 {
+  margin: 5% 5% 0 5%;
+  background-color: hsl(268, 34%, 53%);
+  color: white;
+  font-weight: 600;
+  width: 40%;
+  padding: 0.8rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.section-two .downloadbtn2:hover {
+  opacity: 0.5;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section-two {
+    margin-top: -5.4rem;
+    padding: 10% 0;
+  }
+}
+@media (min-width: 1024px) {
+  .section-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 2.5% 15%;
+    width: 100%;
+    margin-top: -9.7rem;
+    gap: 2.5%;
+  }
+  .section-two h2 {
+    margin: 0;
+  }
+  .section-two p {
+    margin: 0;
+  }
+  .section-two .downloadbtn2 {
+    margin: 5% 5% 0 5%;
+    background-color: hsl(268, 34%, 53%);
+    color: white;
+    font-weight: 600;
+    width: 20%;
+    padding: 0.8rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+  }
+  .section-two .downloadbtn2:hover {
+    opacity: 0.5;
+  }
+}
+
+.section-two::before {
+  content: "";
+  background-image: url("assets/mobile/image-footer.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+  /* Adjust opacity here */
+  z-index: -5;
+  /* Ensures the background stays behind the content */
+}/*# sourceMappingURL=styles.css.map */
